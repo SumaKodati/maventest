@@ -2,17 +2,17 @@ pipeline {
   agent any
       stages {
         stage('First Step') {
-          step {
+          steps {
             sh "mvn clean"
           }
         }
         stage('Second Step') {
-          step {
+          steps {
             sh "mvn test"
           }
         }
         stage('Third Step') {
-          step {
+          steps {
             sh "mvn package"
           }
         }
